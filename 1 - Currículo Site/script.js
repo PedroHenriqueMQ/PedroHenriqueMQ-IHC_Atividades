@@ -67,7 +67,9 @@ function criarCaixaDeSecao(secao, titulo, descricao) {
             ["Título", "Descrição"],
             secao
         );
-        caixaDeSecao.insertBefore(caixaDeEdicao, elementoDeSecao);
+
+        if (caixaDeSecao.childElementCount > 2) caixaDeSecao.insertBefore(caixaDeEdicao, elementoDeSecao);
+        else caixaDeSecao.appendChild(caixaDeEdicao);
     }
 
     botaoExcluir.onclick = () => {
