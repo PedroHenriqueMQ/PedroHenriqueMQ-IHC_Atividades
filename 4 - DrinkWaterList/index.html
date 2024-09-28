@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrinkWater</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="collection" id="collection"></div>
+        <div class="row">
+            <div class="col s12 m6">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Adicionar Novo Item na Lista</span>
+                </div>
+                <div class="card-action">
+                    <input type="number" id="mls" placeholder="mls de água bebidos">
+                    <input type="time" id="horario" placeholder="horário que bebeu">
+                    <a href="#" id="submit-btn">Enviar</a>
+                    <a href="#" id="cancel-btn">Cancelar</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    
+    <footer class="page-footer">
+        <p id="total-mls">Total: 0 mls</p>
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <a class="waves-effect waves-light btn" id="add-btn">Adicionar</a>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <a class="waves-effect waves-light btn cancel" id="delete-btn">Remover</a>
+                </div>
+            </div>
+        </div>
+      </footer>
+          
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
